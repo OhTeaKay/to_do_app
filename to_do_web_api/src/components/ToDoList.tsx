@@ -1,3 +1,4 @@
+import Task from "./Task";
 interface Props {
   items: string[];
   onSelectedItem: (item: string) => void;
@@ -16,6 +17,12 @@ function ToDoList({ items, onSelectedItem }: Props) {
             }}
           >
             {item}
+            <Task
+              id={1}
+              task="Spacer z psem"
+              done="False"
+              cathegory="Dom"
+            ></Task>
           </li>
         ))}
       </ul>
